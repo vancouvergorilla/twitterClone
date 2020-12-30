@@ -6,7 +6,8 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "eject": "expo eject",
-    "ios-simulator": "open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app/"
+    "ios-simulator": "open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app/",
+    "android-emulator": "emulator -avd Pixel_4_API_30"
   },
   "dependencies": {
     "@expo/vector-icons": "^12.0.0",
