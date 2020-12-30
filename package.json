@@ -6,7 +6,7 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "eject": "expo eject",
-    "lint": "yarn eslint --ext '.js,.ts' ./src"
+    "ios-simulator": "open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app/"
   },
   "dependencies": {
     "@expo/vector-icons": "^10.0.6",
