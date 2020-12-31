@@ -1,14 +1,6 @@
 import React from 'react';
 import { StyleSheet, View, Image, TouchableOpacity } from 'react-native';
-import {
-  Surface,
-  Title,
-  Caption,
-  Text,
-  Avatar,
-  TouchableRipple,
-  useTheme,
-} from 'react-native-paper';
+import { Surface, Title, Caption, Text, Avatar, TouchableRipple, useTheme } from 'react-native-paper';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import color from 'color';
 

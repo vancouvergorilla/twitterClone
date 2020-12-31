@@ -4,7 +4,8 @@ import { StackNavigationProp } from '@react-navigation/stack';
 import { useTheme } from 'react-native-paper';
 
 import { Twitt } from './components/twitt';
-import { twitts } from './data';
+// import { twitts } from './data';
+import { twitts } from './data/data.json';
 import { StackNavigatorParamlist } from './types';
 
 type TwittProps = React.ComponentProps<typeof Twitt>;
@@ -23,8 +24,9 @@ type Props = {
 
 export const Feed = (props: Props) => {
   const theme = useTheme();
+  const twittList = Object.values(twitts);
 
-  const data = twitts.map(twittProps => ({
+  const data = twittList.map(twittProps => ({
     ...twittProps,
     onPress: () =>
       props.navigation &&

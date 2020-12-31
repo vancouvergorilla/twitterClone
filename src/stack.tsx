@@ -1,5 +1,6 @@
 import React from 'react';
 import { TouchableOpacity } from 'react-native';
+import { getFocusedRouteNameFromRoute } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { DrawerNavigationProp } from '@react-navigation/drawer';
 import { Appbar, Avatar, useTheme } from 'react-native-paper';
@@ -81,10 +82,7 @@ export const StackNavigator = () => {
         name="FeedList"
         component={BottomTabs}
         options={({ route }) => {
-          console.log('!@# options', { route });
-          const routeName = route.state
-            ? route.state.routes[route.state.index].name
-            : 'Feed';
+          const routeName = getFocusedRouteNameFromRoute(route) ?? 'Feed';
           return { headerTitle: routeName };
         }}
       />

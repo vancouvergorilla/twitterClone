@@ -2,8 +2,8 @@ import React from 'react';
 import color from 'color';
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
 import { useTheme, Portal, FAB } from 'react-native-paper';
-import { useSafeArea } from 'react-native-safe-area-context';
-import { useIsFocused, RouteProp } from '@react-navigation/native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import { useIsFocused, RouteProp, getFocusedRouteNameFromRoute } from '@react-navigation/native';
 
 import overlay from './overlay';
 import { Feed } from './feed';
@@ -18,12 +18,10 @@ type Props = {
 };
 
 export const BottomTabs = (props: Props) => {
-  const routeName = props.route.state
-    ? props.route.state.routes[props.route.state.index].name
-    : 'Feed';
+  const routeName = getFocusedRouteNameFromRoute(props.route) ?? 'Feed';
 
   const theme = useTheme();
-  const safeArea = useSafeArea();
+  const safeArea = useSafeAreaInsets();
   const isFocused = useIsFocused();
 
   let icon = 'feather';
