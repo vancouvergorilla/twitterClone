@@ -15,7 +15,9 @@ Moved sample data from JavaScript to a Firebase-compatible JSON file.
 
 Updated URL for Evan Bacon's profile image.
 
+## Bugs
 
+Notifications and Messages screens are blank the first time you navigate to them. No error messages in console.
 
 
 
