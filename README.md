@@ -50,8 +50,8 @@ Moved sample data from JavaScript to a Firebase-compatible JSON file. Updated UR
 
 ## Bugs
 
-Notifications and Messages screens are blank the first time you navigate to them in the web interface. There are n
-o error messages in consoles. This doesn't happen on iOS and Android, though there is a noticable pause before they display.
+Notifications and Messages screens are blank the first time you navigate to them in the web interface. 
+This doesn't happen on iOS and Android, though there is a noticable pause before they display.
 
 ## Acknowledgments
 
